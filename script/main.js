@@ -673,12 +673,12 @@ darkModeToggle.addEventListener("click", () => {
 /* ********************************************************** */
 /* ########################################################## */
 /* Header Fixed ***********************************************/
-if ($("#myHeader").length) {
+if ($("#sticky-menu").length) {
     window.onscroll = function () {
         myFunction()
     };
 
-    let header = document.getElementById("myHeader");
+    let header = document.getElementById("sticky-menu");
     let sticky = header.offsetTop;
 
     function myFunction() {

@@ -9,10 +9,6 @@
     <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
     <!-- Bootstrap Css 5.2v -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <!-- Google Fonts PT SANS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Box Icons Css 2,1,4v -->
     <link rel="stylesheet" href="styles/boxicons.min.css">
     <!-- Swiper Css 8.1.1v -->
@@ -24,7 +20,7 @@
     <!-- Snow Css 1.1.1v -->
     <link rel="stylesheet" href="styles/snow.css">
     <!-- Main Css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css?v=0.1">
 
     <title>Trust Insurance | Bosh sahifa</title>
 </head>
@@ -40,6 +36,66 @@
     </div>
 </button>
 
+
+<!--========================================================================-->
+<!-- SITE MENU MODAL -->
+<!--========================================================================-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Site menu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-lg container-fluid">
+                    <div class="row row-gap-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div class="d-flex flex-column row-gap-2">
+                                <h5 class="fs-6 text-primary fw-bolder">Company link name</h5>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div class="d-flex flex-column row-gap-2">
+                                <h5 class="fs-6 text-primary fw-bolder">Company link name</h5>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div class="d-flex flex-column row-gap-2">
+                                <h5 class="fs-6 text-primary fw-bolder">Company link name</h5>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div class="d-flex flex-column row-gap-2">
+                                <h5 class="fs-6 text-primary fw-bolder">Company link name</h5>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                                <a href="" class="w-max-content fs-6 text-secondary">here link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--========================================================================-->
 <!-- |SPECIAL OPPORTUNITIES| -->
@@ -109,6 +165,7 @@
         </div>
     </div>
 </div>
+
 <!--========================================================================-->
 <!-- |HEADER TOP SEARCH| -->
 <!--========================================================================-->
@@ -132,6 +189,7 @@
         </div>
     </div>
 </div>
+
 <!--========================================================================-->
 <!-- |HEADER TOP| -->
 <!--========================================================================-->
@@ -255,33 +313,52 @@
                 <li><a class="fs-6 fw-normal text-secondary px-3 pb-2 dropdown-toggle" href="#">Work progress</a></li>
             </ul>
             <div class="d-flex align-items-center pb-2">
-                <a class="btn btn-secondary text-white d-flex fw-bold align-items-center me-3 fs-7 px-4 py-2"
+                <a class="btn btn-secondary text-white d-flex fw-bold align-items-center justify-content-center me-3 fs-7 px-xl-4 px-3 py-2"
                    data-bs-toggle="modal"
                    data-bs-target="#specialOpportunities" href="#"><i class="me-1 bx bx-show"></i>
-                    Maxsus imkoniyatlar</a>
-                <a class="btn btn-primary fs-7 fw-bold px-4 py-2" href="#">Обратная связь</a>
+                    <span class="d-none d-xl-block">Maxsus imkoniyatlar</span></a>
+                <a class="btn btn-primary fs-7 fw-bold px-xl-4 px-3 py-2 d-flex align-items-center justify-content-center"
+                   href="#"><i class='bx bx-phone me-1'></i><span class="d-none d-xl-block">Обратная связь</span></a>
             </div>
         </div>
     </div>
 </nav>
+
 <!--========================================================================-->
 <!-- |HEADER| -->
 <!--========================================================================-->
-<nav class="navbar navbar-expand-lg bg-light" id="myHeader">
+<nav class="navbar navbar-expand-lg bg-light" id="sticky-menu">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo/site-logo.png" alt="Logo"></a>
+        <a class="navbar-brand me-0" href="#"><img src="images/logo/site-logo.png" class="w-100" alt="Logo"></a>
+        <ul class="d-lg-flex d-none align-items-center column-gap-3 ms-4 me-auto">
+            <li><a href="#" class="fs-6 fw-normal text-secondary">Юридические лица</a></li>
+            <li><a href="#" class="fs-6 fw-normal text-secondary">Юридические лица</a></li>
+        </ul>
         <div class="d-flex align-items-center">
-            <a class="search-action nav-link d-flex align-items-center me-3 fs-7" data-bs-toggle="modal"
+            <a class="search-action nav-link d-flex align-items-center d-none-450px fs-7" data-bs-toggle="modal"
                data-bs-target="#headerSearch" href="#"><i class="me-1 bx bx-search-alt"></i> Izlash</a>
-            <a class="btn btn-secondary fs-7 fw-bold px-4 py-2 text-white" href="#">Обратная связь</a>
+            <a class="btn btn-secondary fs-7 fw-bold px-xl-4 px-3 py-2 ms-3 text-white d-none-500px d-flex align-items-center justify-content-center"
+               href="#"><i class='bx bx-user me-1'></i><span class="d-none d-lg-block">Личный кабинет</span></a>
             <select class="nice-select nice-select-default text-gray fs-7">
                 <option value="uzbek">O’z</option>
                 <option value="ruscha">Rus</option>
                 <option value="inglizcha">Eng</option>
             </select>
+            <div class="d-flex d-lg-none align-items-center column-gap-3">
+                <a class="btn btn-secondary text-white d-flex fw-bold align-items-center justify-content-center fs-7 px-xl-4 px-3 py-2"
+                   data-bs-toggle="modal"
+                   data-bs-target="#specialOpportunities" href="#"><i class="me-1 bx bx-show"></i>
+                    <span class="d-none d-xl-block">Maxsus imkoniyatlar</span></a>
+                <a class="btn btn-primary fs-7 fw-bold px-xl-4 px-3 py-2 d-none d-md-flex align-items-center justify-content-center"
+                   href="#"><i class='bx bx-phone me-1'></i><span class="d-none d-xl-block">Обратная связь</span></a>
+            </div>
+            <button class="border-0 bg-transparent align-items-center menu-item-burger sticky-menu-btn"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    type="button"><i class='bx bx-menu fs-4 text-gray'></i></button>
         </div>
     </div>
 </nav>
+
 <!--========================================================================-->
 <!-- |HEADER INTRO | SLIDER| -->
 <!--========================================================================-->
@@ -355,6 +432,7 @@
     </div>
     <div class="swiper-pagination"></div>
 </div>
+
 <!--========================================================================-->
 <!-- |INSURANCE TYPE | SWIPER"| -->
 <!--========================================================================-->
@@ -447,6 +525,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |ABOUT| -->
 <!--========================================================================-->
@@ -473,6 +552,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |COMPANY CONVENIENCE| -->
 <!--========================================================================-->
@@ -548,6 +628,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |PARTNERS| SWIPER| -->
 <!--========================================================================-->
@@ -610,6 +691,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |LATEST NEWS | SWIPER| -->
 <!--========================================================================-->
@@ -701,8 +783,9 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
-<!-- |COMENT | SWIPER| -->
+<!-- |COMMENT | SWIPER| -->
 <!--========================================================================-->
 <section class="bg-secondary position-relative">
     <div id="particles-js" class="position-absolute top-0 start-0 z-index-1"></div>
@@ -774,6 +857,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |OUR ADVANTAGES| -->
 <!--========================================================================-->
@@ -829,6 +913,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |QUESTIONNAIRE| 1-STEP -->
 <!--========================================================================-->
@@ -860,6 +945,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |QUESTIONNAIRE| 2-STEP -->
 <!--========================================================================-->
@@ -910,6 +996,7 @@
         </div>
     </div>
 </section>
+
 <!--========================================================================-->
 <!-- |FOOTER|-->
 <!--========================================================================-->
@@ -975,6 +1062,7 @@
         </div>
     </div>
 </footer>
+
 <!--========================================================================-->
 <!-- |Scroll Up| -->
 <!--========================================================================-->
@@ -1022,7 +1110,7 @@
 <script src="script/particles.js"></script>
 <script src="script/app.js"></script>
 <!-- Main JS -->
-<script src="script/main.js"></script>
+<script src="script/main.js?v=0.1"></script>
 </body>
 
 </html>
