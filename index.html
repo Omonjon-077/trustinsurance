@@ -22,7 +22,7 @@
     <!-- Snow Css 1.1.1v -->
     <link rel="stylesheet" href="styles/snow.css">
     <!-- Main Css -->
-    <link rel="stylesheet" href="styles/main.css?v=0.3">
+    <link rel="stylesheet" href="styles/main.css?v=0.4">
 
     <title>Trust Insurance | Bosh sahifa</title>
 </head>
@@ -341,11 +341,29 @@
                data-bs-target="#headerSearch" href="#"><i class="me-1 bx bx-search-alt"></i> Izlash</a>
             <a class="btn btn-secondary fs-7 fw-bold px-xl-4 px-3 py-2 ms-3 text-white d-none-500px d-flex align-items-center justify-content-center"
                href="#"><i class='bx bx-user me-1'></i><span class="d-none d-lg-block">Личный кабинет</span></a>
-            <select class="nice-select nice-select-default text-gray fs-7">
-                <option value="uzbek">O’z</option>
-                <option value="ruscha">Rus</option>
-                <option value="inglizcha">Eng</option>
-            </select>
+            <div class="nav-item-top dropdown ms-3 me-lg-0 me-3">
+                <!-- Language -->
+
+                <a class="nav-link-sm d-flex align-items-center text-gray fw-bold column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not pe-3"
+                   href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    UZ
+                </a>
+                <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                    style="min-width: auto">
+
+                    <li>
+                        <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
+                    </li>
+                    <li>
+                        <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                    </li>
+                    <li>
+                        <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                    </li>
+                </ul>
+                <!-- End Language -->
+            </div>
             <div class="d-flex d-lg-none align-items-center column-gap-3">
                 <a class="btn btn-secondary text-white d-flex fw-bold align-items-center justify-content-center fs-7 px-xl-4 px-3 py-2"
                    data-bs-toggle="modal"

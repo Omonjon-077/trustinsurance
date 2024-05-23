@@ -323,6 +323,29 @@ body {
     border-bottom: 2px solid transparent;
 }
 
+.dropdown-arrow::after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    border-left: initial !important;
+    border-top: initial !important;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 2px;
+    top: 55%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all .2s ease-in-out;
+    width: 6px;
+}
+
+.dropdown-arrow.show::after {
+    transform: rotate(-135deg);
+}
+
 .nav-top .dropdown-menu {
     top: 40px;
     left: 0;
@@ -813,6 +836,7 @@ progress {
     .navbar-brand {
         width: 130px !important;
     }
+
     .comment-user-card {
         height: 250px;
     }
