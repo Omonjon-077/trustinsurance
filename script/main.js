@@ -299,6 +299,7 @@ const voiceModeToggle = document.querySelector(".mode__voice");
 let voiceSaveToggle = document.querySelector(".voicemode input[type='checkbox']");
 
 /* Barcha matnlarni ovozlarni ******************************* */
+
 /* ijro etuvchi funksiyalar shuni ichida ******************** */
 function ifActiveVoice() {
     if (!voiceOn) {
@@ -497,6 +498,7 @@ function ifActiveVoice() {
         })();
     }
 }
+
 const enableVoiceMode = () => {
     voiceTop.classList.add("active");
     voiceModeControl.classList.add("active");
@@ -652,7 +654,8 @@ function disableScroll() {
 }
 
 function enableScroll() {
-    window.onscroll = function () { };
+    window.onscroll = function () {
+    };
 }
 
 darkModeToggle.addEventListener("click", () => {
@@ -695,9 +698,9 @@ if ($("#scroll-up").length) {
         if (this.scrollY >= 350) scrollUp.classList.add('show-scroll');
         else scrollUp.classList.remove('show-scroll')
     }
+
     window.addEventListener('scroll', scrollUp)
 }
-
 
 
 /* ********************************************************** */
